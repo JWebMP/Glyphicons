@@ -17,3 +17,4 @@ persistence.xml
 *.iml
 /.idea/
 /dependency-reduced-pom.xml
+/flatter.pom
