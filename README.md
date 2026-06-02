@@ -13,9 +13,9 @@
 
 250+ monochromatic icons and symbols from Bootstrap 3's Glyphicons Halflings set for JWebMP applications. CSS web font rendering with `glyphicon glyphicon-` class prefix.
 
-Built on [Glyphicons](http://glyphicons.com/) · [Angular 21](https://angular.dev/) · [JWebMP Core](https://jwebmp.com/) · JPMS module `com.jwebmp.plugins.glyphicons` · Java 25+
+Built on [Glyphicons](http://glyphicons.com/) ï¿½ [Angular 21](https://angular.dev/) ï¿½ [JWebMP Core](https://jwebmp.com/) ï¿½ JPMS module `com.jwebmp.plugins.glyphicons` ï¿½ Java 25+
 
-**Version: 1.9.2** — Classic Bootstrap 3 icon set with type-safe Java enum API.
+**Version: 1.9.2** ï¿½ Classic Bootstrap 3 icon set with type-safe Java enum API.
 
 ## Installation
 
@@ -23,7 +23,7 @@ Built on [Glyphicons](http://glyphicons.com/) · [Angular 21](https://angular.dev
 <dependency>
   <groupId>com.jwebmp.plugins</groupId>
   <artifactId>glyphicons</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.3-SNAPSHOT</version>
 </dependency>
 ```
 
@@ -37,13 +37,13 @@ implementation("com.jwebmp.plugins:glyphicons:2.0.0-SNAPSHOT")
 
 ## Features
 
-- **250+ Monochromatic Icons** — Classic Bootstrap 3 Glyphicons Halflings set
-- **Type-Safe Java Enum API** — `Glyphicons` enum with compile-time safety and IDE autocomplete
-- **CSS Web Font Rendering** — `glyphicon glyphicon-` prefixed CSS classes
-- **CRTP Fluent API** — `Glyphicon<J>` component with type-safe method chaining
-- **IIcon Interface** — Implements JWebMP's standard icon interface for interoperability
-- **Zero Configuration** — Auto-registered via ServiceLoader SPI
-- **Modular Architecture** — JPMS module with explicit dependencies
+- **250+ Monochromatic Icons** ï¿½ Classic Bootstrap 3 Glyphicons Halflings set
+- **Type-Safe Java Enum API** ï¿½ `Glyphicons` enum with compile-time safety and IDE autocomplete
+- **CSS Web Font Rendering** ï¿½ `glyphicon glyphicon-` prefixed CSS classes
+- **CRTP Fluent API** ï¿½ `Glyphicon<J>` component with type-safe method chaining
+- **IIcon Interface** ï¿½ Implements JWebMP's standard icon interface for interoperability
+- **Zero Configuration** ï¿½ Auto-registered via ServiceLoader SPI
+- **Modular Architecture** ï¿½ JPMS module with explicit dependencies
 
 ## Quick Start
 
