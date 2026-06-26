@@ -11,5 +11,5 @@ module com.jwebmp.plugins.glyphicons {
 	provides com.guicedee.client.services.config.IGuiceScanModuleExclusions with com.jwebmp.plugins.glyphicons.implementations.GlyphiconsExclusionsModule;
 	provides com.guicedee.client.services.config.IGuiceScanModuleInclusions with GlyphiconInclusionModule;
 
-	opens com.jwebmp.plugins.glyphicons to com.fasterxml.jackson.databind, com.jwebmp.core;
+	opens com.jwebmp.plugins.glyphicons to tools.jackson.databind, com.jwebmp.core;
 }
