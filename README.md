@@ -82,7 +82,6 @@ src/main/java/com/jwebmp/plugins/glyphicons/
 +-- Glyphicons.java                     # Enum with 250+ icon constants
 +-- GlyphiconsPageConfigurator.java     # Auto-registration via ServiceLoader
 +-- implementations/
-    +-- GlyphiconInclusionModule.java
     +-- GlyphiconsExclusionsModule.java
 ```
 

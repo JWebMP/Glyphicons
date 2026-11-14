@@ -1,20 +1,17 @@
 package com.jwebmp.plugins.glyphicons.implementations;
 
 import com.guicedee.client.services.config.IGuiceScanModuleExclusions;
-
-import jakarta.validation.constraints.NotNull;
-import java.util.HashSet;
+import com.guicedee.client.services.config.IGuiceScanJarExclusions;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class GlyphiconsExclusionsModule
-		implements IGuiceScanModuleExclusions<GlyphiconsExclusionsModule>
-{
-
-	@Override
-	public @NotNull Set<String> excludeModules()
-	{
-		Set<String> strings = new HashSet<>();
-		strings.add("com.jwebmp.plugins.glyphicons");
-		return strings;
-	}
+/** SPI services and direct resource access do not require scanning this library. */
+public class GlyphiconsExclusionsModule implements IGuiceScanModuleExclusions<GlyphiconsExclusionsModule>, IGuiceScanJarExclusions<GlyphiconsExclusionsModule> {
+    @Override public Set<String> excludeModules() { return Set.of("com.jwebmp.plugins.glyphicons"); }
+    @Override public Set<String> excludeJars() {
+        Set<String> jars = new LinkedHashSet<>();
+        jars.add("glyphicons.jar");
+        for (int digit = 0; digit <= 9; digit++) jars.add("glyphicons-" + digit + "*.jar");
+        return jars;
+    }
 }
